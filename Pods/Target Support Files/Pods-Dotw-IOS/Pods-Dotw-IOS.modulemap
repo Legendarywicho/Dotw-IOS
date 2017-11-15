@@ -1,0 +1,6 @@
+framework module Pods_Dotw_IOS {
+  umbrella header "Pods-Dotw-IOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

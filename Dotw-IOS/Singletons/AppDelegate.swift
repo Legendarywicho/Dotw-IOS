@@ -12,10 +12,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame : UIScreen.main.bounds);
+        let mainController = ViewController();
+        //Check if we have ever shown the dialog
+        if(UserDefaults.standard.value(forKey: "dialog") as? String) != nil {
+            //We have something, don't show a dilogue
+            print("not showing dialog");
+            mainController.mShowDialogue = false;
+        }else{
+            // We don't have data, show the dialogue
+            mainController.mShowDialogue = true;
+            print("showing dialog");
+        }
+        window?.rootViewController = UINavigationController(rootViewController: mainController);
+        window?.makeKeyAndVisible();
         return true
     }
 
