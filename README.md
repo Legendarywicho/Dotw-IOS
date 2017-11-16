@@ -7,3 +7,5 @@ Dotw is an IOS app built for calculating the average and mean deviation
 You can download the app through this [link](https://luis-santiago.com)
 ## Android user?
 This app is also available for android, check it out [here](https://github.com/jalmx89/Dotw).
+## Licence
+Dotw is available under the MIT license. See the [LICENSE](https://github.com/Legendarywicho/Dotw-IOS/blob/master/LICENSE) file for more info.
