@@ -5,3 +5,5 @@ Dotw is an IOS app built to calculate for calculating the average and mean devia
 - iOS 11.1 and later
 ## Download
 You can download the app through this link.
+## Android user?
+This app is also available for android, check it our here.
